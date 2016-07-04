@@ -1,0 +1,13 @@
+<h1> Online Calculator </h1>
+
+<form method="POST" action="/calculate">
+  <input type="number" name="first_num" placeholder="42">
+  <input type="number" name="second_num" placeholder="100">
+
+  <input type="hidden" name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+  <button type="submit">
+    Add
+  </button>
+</form>
