@@ -1,0 +1,35 @@
+<div> 
+	<h4>
+		This is the text the user submitted:
+	</h4>
+	<h5>
+	 	<%=@text%>
+	</h5>
+</div>
+  <br>
+  <br>
+<div> 
+	The word count is <%=@word_count%> 
+</div>
+  <br>
+  <br>
+<div>
+	<h3>
+		Ten most frequest words: 
+	</h3>
+	<% @freq_array.each do |e|%>
+	<h5>
+		"<%=e[1]%>":
+		<br>
+	 -- <%=e[0]%> times
+	</h5>
+	<%end%>
+</div>
+
+
+
+
+
+<div>
+  <a href ="/" > Home </a>
+</div>

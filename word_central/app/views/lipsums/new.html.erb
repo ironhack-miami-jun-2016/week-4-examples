@@ -1,0 +1,19 @@
+<h1>Word Generator</h1>
+
+<h2>Select From Options Below</h2>
+
+
+<!-- ***** Updated ***** -->
+<form action="/lipsums" method="post">
+  <div>
+    <label for="number_of">Number of Words/Paragraphs</label>
+    <input type='number' name="number_of" id="number_of"></input>
+    <Input TYPE="radio" NAME="words_or_para" VALUE="words">Words
+	<Input TYPE="radio" NAME="words_or_para" VALUE="paragraphs">Paragraphs
+  </div>
+  <input type='hidden' name='authenticity_token'
+      value="<%= form_authenticity_token %>">
+
+  <!-- ***** New ***** -->
+  <button type="submit">Submit text</button>
+</form>

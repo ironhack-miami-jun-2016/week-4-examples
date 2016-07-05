@@ -1,0 +1,17 @@
+<h1>Word Art City!!!</h1>
+
+<h2>Submit some text to make it look super awesome!</h2>
+
+
+
+<form action="/asciis" method="post">
+  <div>
+    <label for="ascii_user_text">Text</label>
+    <input type='text' name="ascii[user_text]" id="ascii_user_text"></input>
+  </div>
+  <input type='hidden' name='authenticity_token'
+      value="<%= form_authenticity_token %>">
+
+
+  <button type="submit">Submit text</button>
+</form>
