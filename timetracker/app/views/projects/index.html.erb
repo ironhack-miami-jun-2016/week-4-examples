@@ -3,7 +3,11 @@
 <ul>
   <% @projects_array.each do |the_project| %>
     <li>
-      <%= the_project.name %>
+      <%#= link_to(the_project.name, project_path(the_project.id)) %>
+
+      <a href="/projects/<%= the_project.id %>">
+        <%= the_project.name %>
+      </a>
 
       <% if the_project.description != nil %>
         - <%= the_project.description %>
