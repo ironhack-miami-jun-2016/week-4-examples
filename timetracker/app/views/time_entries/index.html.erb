@@ -1,0 +1,12 @@
+<h2> <%= @my_project.name %> </h2>
+
+<ul>
+  <% @entries_array.each do |the_entry| %>
+    <li>
+      <%= the_entry.hours %> hours
+      <%= the_entry.minutes %> minutes -
+      <%= the_entry.date %>
+      <p> <%= the_entry.comment %> </p>
+    </li>
+  <% end %> 
+</ul>
