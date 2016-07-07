@@ -8,5 +8,10 @@
       <%= the_entry.date %>
       <p> <%= the_entry.comment %> </p>
     </li>
-  <% end %> 
+  <% end %>
 </ul>
+
+
+<a href="/projects/<%= @my_project.id %>/time_entries/new">
+  Add a time entry to <%= @my_project.name %>
+</a>
